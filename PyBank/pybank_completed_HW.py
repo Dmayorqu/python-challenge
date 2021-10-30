@@ -31,7 +31,8 @@ minmonth=Month[minchangeindex]
 maxmonth=Month[maxchangeindex]
 
 print(f"Average change: {averagechange}, min change {minmonth}: {minchange}, max change {maxmonth}: {maxchange}")
-
+with open ('output.txt', 'w') as txt_file:
+    print(f"Average change: {averagechange}, min change {minmonth}: {minchange}, max change {maxmonth}: {maxchange}",file = txt_file)    
 
 
 
